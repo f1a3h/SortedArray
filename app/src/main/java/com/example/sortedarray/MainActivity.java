@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String inputText = editText.getText().toString();
+                editText.setText("");
                 if (!TextUtils.isEmpty(inputText)) {
                     int number = Integer.parseInt(inputText);
                     arrayList.add(number);
